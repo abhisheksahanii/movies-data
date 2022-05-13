@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body{
+    font-family: 'Koulen', cursive;
+    background-color: #E8F9FD;
+}
+
+.container{
+    margin-top: 50px;
+}
+.fa{
+    font-size: 50px;
+  }
+.column{
+    font-size: 20px;
+    border: 2px solid black;
+   
+}
+.row{
+    margin-top: 50px;
+}
+
+.movie-data{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+td {
+    text-align: center;
+    border:2px solid black;
+    font-size: 25px;
+  }
+
+th {
+    text-align: center;
+    border:2px solid black;
+}
+.text-center{
+    color: #764AF1;
+    border-color: #764AF1;
+    font-size: 30px;
+}
+
+.text-center:hover {
+    background-color:#764AF1;
+    transition: 0.2s;
+}
