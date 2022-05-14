@@ -4,7 +4,7 @@ import { Component,OnInit } from '@angular/core';
 export class Movies{
   constructor(
   public id : number,
-  public globalrank : string,
+  public rank : string,
   public title : string
   ){
 
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   getMovies(){
-    this.httpClient.get<any>('http://localhost:3000/movies').subscribe(
+    this.httpClient.get<any>('https://my-movies-list-app-project.herokuapp.com/movies').subscribe(
       response =>{
         console.log(response);
         this.movies = response;
